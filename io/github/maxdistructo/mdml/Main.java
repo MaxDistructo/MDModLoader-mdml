@@ -13,7 +13,7 @@ public class Main {
 	public static CommonProxy proxy;
     public static final String MODID = "MDModDownload";
     public static final String MODNAME = "MD Mod Downloader";
-    public static final String VERSION = "Dev 0.1";
+    public static final String VERSION = "0.1";
     public static String[] modIDs;
     public static String[] devs;
     public static String[] versions;

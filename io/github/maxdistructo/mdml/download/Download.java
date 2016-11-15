@@ -1,4 +1,4 @@
-package io.github.maxdistructo.download;
+package io.github.maxdistructo.mdml.download;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;

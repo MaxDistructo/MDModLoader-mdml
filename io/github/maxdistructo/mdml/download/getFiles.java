@@ -1,8 +1,8 @@
 package io.github.maxdistructo.mdml.download;
 
-import io.github.maxdistructo.Main;
-import io.github.maxdistructo.reader.*;
-import io.github.maxdistructo.update.*;
+import io.github.maxdistructo.mdml.Main;
+import io.github.maxdistructo.mdml.reader.*;
+import io.github.maxdistructo.mdml.update.*;
 import java.io.*;
 
 public class getFiles{

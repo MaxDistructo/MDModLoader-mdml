@@ -1,4 +1,4 @@
-package io.github.maxdistructo.download;
+package io.github.maxdistructo.mdml.download;
 
 import io.github.maxdistructo.Main;
 import io.github.maxdistructo.reader.*;

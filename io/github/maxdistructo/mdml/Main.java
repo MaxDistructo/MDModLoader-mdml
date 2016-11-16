@@ -11,9 +11,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class Main {
 	@SidedProxy(clientSide="ClientProxy", serverSide = "ServerProxy")
 	public static CommonProxy proxy;
-    public static final String MODID = "MDModDownload";
-    public static final String MODNAME = "MD Mod Downloader";
-    public static final String VERSION = "Dev 0.1";
+    public static final String MODID = "mdml";
+    public static final String MODNAME = "MD Mod Loader";
+    public static final String VERSION = "Unstable 0.1";
     public static String[] modIDs;
     public static String[] devs;
     public static String[] versions;

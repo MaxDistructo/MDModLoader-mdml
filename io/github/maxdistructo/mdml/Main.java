@@ -1,4 +1,4 @@
-package io.github.maxdistructo;
+package io.github.maxdistructo.mdml;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;

@@ -14,12 +14,12 @@ public class Main {
     public static final String MODID = "mdml";
     public static final String MODNAME = "MD Mod Loader";
     public static final String VERSION = "Unstable 0.1";
-    public static String[] modIDs;
-    public static String[] devs;
-    public static String[] versions;
-    public static String[] types;
-    public static String[] files;
-    public static String[] materials;
+    public static String[] modIDs = new String[100];
+    public static String[] devs = new String[100];
+    public static String[] versions = new String[100];
+    public static String[] types = new String[100];
+    public static String[] files = new String[100];
+    public static String[] materials = new String[100];
     public static String modId;
     public static String unlocalizedName;
         

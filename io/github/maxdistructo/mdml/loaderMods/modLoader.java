@@ -60,51 +60,53 @@ public class modLoader{
        ReaderArray.ItemArray(modID + "-" + version + type, 12, smeltIn);
        ReaderArray.ItemArray(modID + "-" + version + type, 13, smeltOut);
        //ReaderArray.ReaderArray(modID + "-" + version + type, 14, oreDict);
-
+  while(!swords[itmCntr].equals(null) || !picks[itmCntr].equals(null) || !shovels[itmCntr].equals(null) || !axes[itmCntr].equals(null) || !hoes[itmCntr].equals(null) || !items[itmCntr].equals(null) || !foods[itmCntr].equals(null)){
        if (!swords[itmCntr].equals(null)) {
            RegisterItem.registerSword(swordsI[itmCntr], swords[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
-           itmCntr++;
+           
        } else {
            System.out.println("All Swords for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
        if (!picks[itmCntr].equals(null)) {
            RegisterItem.registerPick(picksI[itmCntr], picks[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
        } else {
            System.out.println("All Pickaxes for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
        if (!shovels[itmCntr].equals(null)) { //Not Set Up Create Shovel
            RegisterItem.registerShovel(shovelsI[itmCntr], shovels[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
        } else {
            System.out.println("All Shovels for Mod " + modID + "Loaded");
-           itmCntr = 0;
+          
        }
        if (!axes[itmCntr].equals(null)) {
            RegisterItem.registerAxe(axesI[itmCntr], axes[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
        } else {
            System.out.println("All Axes for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
        if (!hoes[itmCntr].equals(null)) { //Not Set Up Create Hoe
            RegisterItem.registerHoe(hoesI[itmCntr], hoes[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
        } else {
            System.out.println("All Hoes for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
        if (!items[itmCntr].equals(null)) { //Not Set Up Create Axe
            RegisterItem.registerItem(itemsI[itmCntr], items[itmCntr]);
        } else {
            System.out.println("All Items for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
        if (!foods[itmCntr].equals(null)) { //Not Set Up Create Axe
            RegisterItem.registerFood(foodsI[itmCntr], foods[itmCntr]);
        } else {
            System.out.println("All Food for Mod " + modID + "Loaded");
-           itmCntr = 0;
+           
        }
-
+    itmCntr++;
+  }
+     itmCntr = 0;
        cntr++;
    }
   }

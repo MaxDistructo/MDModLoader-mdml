@@ -1,9 +1,14 @@
 modName
 sword,
+swordMaterials,
 pick,
+pickMaterials,
 shovel,
+shovelMaterials,
 axe,
+axeMaterials,
 hoe,
+hoeMaterials,
 item,
 food,
 top, //Normal Crafting. Not implemented but lines need to be here for easy change later.
@@ -53,7 +58,10 @@ itemOut,null
 itemOutAmount,null
 itemOutMetadata,null
 input,null //Smelting Not Implemented
+inputMetadata,
 output,null
+outputAmount,
+outputMetadata,
 exp,null
 oreDictItem,null //Ore Dictionary Not Implemented
 oreDict,null

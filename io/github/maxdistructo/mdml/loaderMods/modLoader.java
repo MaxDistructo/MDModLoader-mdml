@@ -17,6 +17,7 @@ public class modLoader{
        String version = Main.versions[cntr];
        String type = Main.files[cntr];
        String dev = Main.devs[cntr];
+       File config = "/config/" + dev + "/" + modid + "-" + version + ".txt" 
        String modName = null;
        String[] swords = null;
        String[] picks = null;
@@ -32,34 +33,73 @@ public class modLoader{
        Item[] shovelsI = null;
        Item[] itemsI = null;
        Item[] foodsI = null;
-       String[] craftings = null; //Still deciding what to do here
-       Item[] craftitems = null; //Still deciding what to do here
-       Integer[] craftnum = null; // Still deciding what to do here
+       String[] craftTop = null; //Still deciding what to do here
+       String[] craftMiddle = null;
+       String[] craftBottom = null;
+       char[] itemLetter1 = null;
+       Item[] craftItems1 = null;
+       int[] craftMetaData1 = null;
+       char[] itemLetter2 = null;
+       Item[] craftItems2 = null;
+       int[] craftMetaData2 = null;
+       char[] itemLetter3 = null;
+       Item[] craftItems3 = null;
+       int[] craftMetaData3 = null;
+       char[] itemLetter4 = null;
+       Item[] craftItems4 = null;
+       int[] craftMetaData4 = null;
+       char[] itemLetter5 = null;
+       Item[] craftItems5 = null;
+       int[] craftMetaData5 = null;
+       char[] itemLetter6 = null;
+       Item[] craftItems6 = null;
+       int[] craftMetaData6 = null;
+       char[] itemLetter7 = null;
+       Item[] craftItems7 = null;
+       int[] craftMetaData7 = null;
+       char[] itemLetter8 = null;
+       Item[] craftItems8 = null;
+       int[] craftMetaData8 = null;
+       char[] itemLetter9 = null;
+       Item[] craftItems9 = null;
+       int[] craftMetaData9 = null;
+       Item[] shapelessItemIn1 = null;
+       int[] shapelessMetadata1 = null;
+       int[] shapelessAmount1 = null;
+       Item[] shapelessItemIn2 = null;
+       int[] shapelessMetadata12 = null;
+       int[] shapelessAmount2 = null;
+       Item[] shapelessItemIn3 = null;
+       int[] shapelessMetadata3 = null;
+       int[] shapelessAmount3 = null;
+       Item[] shapelessItemIn4 = null;
+       int[] shapelessMetadata4 = null;
+       int[] shapelessAmount4 = null;
+       Item[] shapelessItemOut = null;
+       int[] shapelessMetadataOut = null;
+       int[] shapelessAmountOut = null;
        Item[] smeltIn = null;
        Item[] smeltOut = null;
-       Float[] craftItemDef = null;
-       //String[] oreDict = null;
-       reader.reader(modID + "-" + version + type, 0, modName);
-       ReaderArray.ReaderArray("/config/" + dev + modID + "-" + version + type, 1, swords);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 2, picks);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 3, shovels);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 4, axes);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 5, hoes);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 6, items);
-       ReaderArray.ReaderArray(modID + "-" + version + type, 7, foods);
+       int[] smeltOutAmoutn = null;
+       int[] smeltOutMetadata = null;
+       float[] smeltExp = null;
+     ` Item[] oreDictItems = null;
+       Item[] oreDictEntry = null;
+
+       reader.reader(config, 0, modName);
+       ReaderArray.ReaderArray(config, 1, swords);
+       ReaderArray.ReaderArray(config, 3, picks);
+       ReaderArray.ReaderArray(config, 5, shovels);
+       ReaderArray.ReaderArray(config, 7, axes);
+       ReaderArray.ReaderArray(config, 9, hoes);
+       ReaderArray.ReaderArray(config, 11, items);
+       ReaderArray.ReaderArray(config, 13, foods);
        ReaderArray.ItemArray(modID + "-" + version + type, 2, picksI);
        ReaderArray.ItemArray(modID + "-" + version + type, 3, shovelsI);
        ReaderArray.ItemArray(modID + "-" + version + type, 4, axesI);
        ReaderArray.ItemArray(modID + "-" + version + type, 5, hoesI);
        ReaderArray.ItemArray(modID + "-" + version + type, 6, itemsI);
        ReaderArray.ItemArray(modID + "-" + version + type, 7, foodsI);
-       //ReaderArray.ReaderArray(modID + "-" + version + type, 8, craftings);
-       //ReaderArray.ItemArray(modID + "-" + version + type, 9, craftitems);
-       //ReaderArray.IntArray(modID + "-" + version + type, 10, craftnum);
-       //ReaderArray.CharArray(modID + "-" + version + type, 11, craftItemDef);
-       ReaderArray.ItemArray(modID + "-" + version + type, 12, smeltIn);
-       ReaderArray.ItemArray(modID + "-" + version + type, 13, smeltOut);
-       //ReaderArray.ReaderArray(modID + "-" + version + type, 14, oreDict);
   while(!swords[itmCntr].equals(null) || !picks[itmCntr].equals(null) || !shovels[itmCntr].equals(null) || !axes[itmCntr].equals(null) || !hoes[itmCntr].equals(null) || !items[itmCntr].equals(null) || !foods[itmCntr].equals(null)){
        if (!swords[itmCntr].equals(null)) {
            RegisterItem.registerSword(swordsI[itmCntr], swords[itmCntr], ToolMaterials. (Main.materials[itmCntr]));
